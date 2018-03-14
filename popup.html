@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>WebSite GeoLocator</title>
+		<style type="text/css">
+			body {
+			margin: 10px;
+			min-width: 400px;
+			white-space: nowrap;
+			max-height:400px;
+			}
+
+			h1 {
+			font-size: 15px;
+			}
+
+			#container {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			}
+
+			td.labela{
+			color:blue;
+			font-weight: bold;
+			}
+
+			h1.naslov{
+			color:red;
+			font-size:30px;
+			text-align: center;
+			}
+
+
+			#map {
+			height: 100%;
+			}
+
+			html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			}
+		</style>
+
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="popup.js"></script>
+
+	</head>
+
+	<body>
+		<h1 class='naslov'>
+			WebSite GeoLocator
+			<h1>
+				<div id="container">
+
+					<table>
+						<tr>
+							<td class='labela'>IP adresa:</td>
+							<td id="ip"></td>
+						</tr>
+						<tr>
+							<td class='labela'>Zemlja:</td>
+							<td id="zemlja"></td>
+						</tr>
+						<tr>
+							<td class='labela'>Grad</td>
+							<td id="grad"></td>
+						</tr>
+						<tr>
+							<td class='labela'>Vremenska zona:</td>
+							<td id="vremenskaZona"></td>
+						</tr>
+					</table>
+				</div>
+				<p id='errorPoruka'></p>
+				<div id="map" style="height: 253px">
+	</body>
+</html>
